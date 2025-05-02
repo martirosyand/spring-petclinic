@@ -28,7 +28,10 @@
     </dependencies>
   </dependencyManagement>
 
-
+	<scm>
+   		<connection>scm:git:git://github.com/martirosyand/test-nexus.git</connection>
+   		<developerConnection>scm:git:ssh://git@github.com/martirosyand/test-nexus.git</developerConnection>
+  	</scm>
 
 		<repositories>
     		<repository>
