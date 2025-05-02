@@ -47,6 +47,19 @@
 
   </properties>
 
+<distributionManagement>
+  <repository>
+    <id>nexus-releases</id>
+    <name>maven-releases</name>
+    <url>http://localhost:8081/reposiroy/maven-releases</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus-snapshots</id>
+    <name>maven-snapshots</name>
+    <url>http://localhost:8081/repository/maven-snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
+
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
@@ -312,6 +325,10 @@
   </licenses>
 
   <repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-group/</url>
+    </repository>
     <repository>
       <snapshots>
         <enabled>true</enabled>
