@@ -16,6 +16,29 @@
     <maven.compiler.release>17</maven.compiler.release>
   </properties>
 
+	<scm>
+		<connection>scm:git:git://github.com/martirosyand/spring-petclinic.git</connection>
+   		<developerConnection>scm:git:ssh://git@github.com/martirosyand/spring-petclinic.git</developerConnection>
+	</scm>
+
+<distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
+
+ <repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-group/</url>
+    </repository>
+  </repositories>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
